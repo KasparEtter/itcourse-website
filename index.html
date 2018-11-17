@@ -11,6 +11,32 @@
     <script defer src="scripts/jquery.min.js"></script>
     <script defer src="scripts/analytics.js"></script>
     <base target="_blank"/>
+
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000000",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#274e86",
+                        "text": "#ffffff"
+                    }
+                },
+                "theme": "edgeless",
+                "content": {
+                    "message": "We use Google Analytics with its cookies to measure how you interact with our website.",
+                    "dismiss": "Got it!",
+                    "link": "Learn more and how to opt-out.",
+                    "href": "https://support.google.com/analytics/answer/6004245"
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="content">
